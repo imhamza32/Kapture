@@ -5,7 +5,7 @@
 Kapture is an open-source iOS application built specifically for creators to display their work, share adventures, and connect with a community of visual artists. Built entirely using **Swift**, **UIKit**, and **Firebase**, this project serves as a comprehensive example of a full-stack social media app.
 
 <p align="center">
-  <img src="screenshots/IMG_0175.jpg" width="250" alt="Kapture Home Screen">
+  <img src="screenshots/IMG_0175.PNG" width="250" alt="Kapture Home Screen">
 </p>
 
 ## 🚀 Features
@@ -17,8 +17,8 @@ Kapture is an open-source iOS application built specifically for creators to dis
     * **Videos:** Integrated video playback support.
 * **Stories System:** Instagram-style stories at the top of the feed for quick updates.
 * **Social Interactions:**
-    * Like, Comment, and Share functionality.
-    * Follow/Unfollow system (Subscribers/Subscribed).
+    * **Like, Comment, and Share functionality.**
+    * **Follow/Unfollow system (Subscribers/Subscribed).**
 * **Gamification:** Earn **Badges** by posting content and engaging with the community.
 * **UserProfile:** Dedicated profile tabs for Images, Videos, and earned Badges.
 * **Modern UI:** Built with a sleek Dark Mode aesthetic using standard UIKit components.
@@ -36,23 +36,23 @@ Kapture is an open-source iOS application built specifically for creators to dis
 
 ### Authentication & Onboarding
 <p float="left">
-  <img src="screenshots/IMG_0174.jpg" width="200" />
-  <img src="screenshots/IMG_0173.jpg" width="200" /> 
-  <img src="screenshots/IMG_0181.jpg" width="200" />
+  <img src="screenshots/IMG_0174.PNG" width="200" />
+  <img src="screenshots/IMG_0173.PNG" width="200" /> 
+  <img src="screenshots/IMG_0181.PNG" width="200" />
 </p>
 
 ### Feed & Interactions
 <p float="left">
-  <img src="screenshots/IMG_0175.jpg" width="200" />
-  <img src="screenshots/IMG_0180.jpg" width="200" />
-  <img src="screenshots/IMG_0179.jpg" width="200" />
+  <img src="screenshots/IMG_0175.PNG" width="200" />
+  <img src="screenshots/IMG_0180.PNG" width="200" />
+  <img src="screenshots/IMG_0179.PNG" width="200" />
 </p>
 
 ### Profile & Video Support
 <p float="left">
-  <img src="screenshots/IMG_0177.jpg" width="200" />
-  <img src="screenshots/IMG_0178.jpg" width="200" />
-  <img src="screenshots/IMG_0176.jpg" width="200" />
+  <img src="screenshots/IMG_0177.PNG" width="200" />
+  <img src="screenshots/IMG_0178.PNG" width="200" />
+  <img src="screenshots/IMG_0176.PNG" width="200" />
 </p>
 
 ## 💻 Installation & Setup
@@ -66,11 +66,12 @@ To run this project locally, you will need to configure Firebase.
     ```
 
 2.  **Install Dependencies**
-
+    *(If you are using CocoaPods)*
     ```bash
     pod install
-    open SocialMediaApp.xcworkspace
+    open Kapture.xcworkspace
     ```
+    *(If using Swift Package Manager, Xcode should resolve dependencies automatically)*
 
 3.  **Firebase Setup (Crucial Step)**
     * Go to the [Firebase Console](https://console.firebase.google.com/).
@@ -99,4 +100,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Project Link: [https://github.com/yourusername/Kapture](https://github.com/yourusername/Kapture)
+Project Link: [https://github.com/imhamza32/Kapture](https://github.com/imhamza32/Kapture)
