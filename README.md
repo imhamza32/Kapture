@@ -6,6 +6,8 @@ Kapture is an open-source iOS application built specifically for creators to dis
 
 <p align="center">
   <img src="screenshots/IMG_0175.PNG" width="250" alt="Kapture Home Screen">
+    <img src="screenshots/IMG_0176.PNG" width="200" />
+
 </p>
 
 ## 🚀 Features
@@ -38,7 +40,6 @@ Kapture is an open-source iOS application built specifically for creators to dis
 <p float="left">
   <img src="screenshots/IMG_0174.PNG" width="200" />
   <img src="screenshots/IMG_0173.PNG" width="200" /> 
-  <img src="screenshots/IMG_0181.PNG" width="200" />
 </p>
 
 ### Feed & Interactions
