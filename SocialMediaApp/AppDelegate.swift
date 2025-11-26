@@ -6,15 +6,50 @@
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift
+import FirebaseCore
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+   
+    let window: UIWindow = {
+        let w = UIWindow()
+        w.backgroundColor = .white
+        w.makeKeyAndVisible()
+        return w
+    }()    /// set orientations you want to be allowed in this property by default
+    var orientationLock = UIInterfaceOrientationMask.portrait
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+
+        IQKeyboardManager.shared.enable = true
+        PushNotificationManager().registerForPushNotifications()
+//        initateViewController()
         return true
+    }
+    
+    func initateViewController() {
+        let status = UserDefaults.standard.bool(forKey: Constants.status)
+        print(status)
+        
+        if (status == true) {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "NavigationHome")
+            self.window.rootViewController = initialViewController
+            self.window.makeKeyAndVisible()
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "SignInNavController")
+            self.window.rootViewController = initialViewController
+            self.window.makeKeyAndVisible()
+        }
+    }
+    
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
     }
 
     // MARK: UISceneSession Lifecycle

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoryCell" customModule="SocialMediaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-qo-0iA">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4N-4C-ecB">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientImg" translatesAutoresizingMaskIntoConstraints="NO" id="RuE-It-jSy">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e86-4U-bOL">
+                                        <rect key="frame" x="0.0" y="175" width="130" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWa-rx-jID">
+                                                <rect key="frame" x="0.0" y="25" width="130" height="15"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AWa-rx-jID" firstAttribute="leading" secondItem="e86-4U-bOL" secondAttribute="leading" id="0JE-mU-klI"/>
+                                            <constraint firstAttribute="trailing" secondItem="AWa-rx-jID" secondAttribute="trailing" id="3qM-db-CU8"/>
+                                            <constraint firstItem="AWa-rx-jID" firstAttribute="top" secondItem="e86-4U-bOL" secondAttribute="top" constant="25" id="ZjD-nH-jYc"/>
+                                            <constraint firstAttribute="height" constant="45" id="eUU-VR-zcU"/>
+                                            <constraint firstAttribute="bottom" secondItem="AWa-rx-jID" secondAttribute="bottom" constant="5" id="y73-WA-93Q"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-rg-2lv">
+                                        <rect key="frame" x="45" y="150" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PPQ-ag-x3Q"/>
+                                            <constraint firstAttribute="width" secondItem="Sgw-rg-2lv" secondAttribute="height" multiplier="1:1" id="aAs-HG-uX9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Add" translatesAutoresizingMaskIntoConstraints="NO" id="PVV-A1-KOJ">
+                                        <rect key="frame" x="70" y="175" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ZPl-kb-q6j"/>
+                                            <constraint firstAttribute="width" secondItem="PVV-A1-KOJ" secondAttribute="height" multiplier="1:1" id="nsU-YV-esX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pew-Me-vkh">
+                                        <rect key="frame" x="0.0" y="150" width="130" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RuE-It-jSy" secondAttribute="trailing" id="0X1-T0-SPf"/>
+                                    <constraint firstAttribute="bottom" secondItem="e86-4U-bOL" secondAttribute="bottom" id="Dge-cY-XNV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pew-Me-vkh" secondAttribute="bottom" id="FpK-4O-yCk"/>
+                                    <constraint firstItem="e86-4U-bOL" firstAttribute="top" secondItem="Sgw-rg-2lv" secondAttribute="bottom" constant="-15" id="GT9-ko-Qeu"/>
+                                    <constraint firstItem="PVV-A1-KOJ" firstAttribute="bottom" secondItem="Sgw-rg-2lv" secondAttribute="bottom" constant="5" id="HjP-WM-Qlz"/>
+                                    <constraint firstAttribute="bottom" secondItem="RuE-It-jSy" secondAttribute="bottom" id="Q09-Za-XH6"/>
+                                    <constraint firstItem="Pew-Me-vkh" firstAttribute="top" secondItem="Sgw-rg-2lv" secondAttribute="top" id="V0h-8W-N22"/>
+                                    <constraint firstItem="e86-4U-bOL" firstAttribute="leading" secondItem="Z4N-4C-ecB" secondAttribute="leading" id="VoU-fF-tRZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="e86-4U-bOL" secondAttribute="trailing" id="eR1-0P-1px"/>
+                                    <constraint firstItem="Pew-Me-vkh" firstAttribute="leading" secondItem="Z4N-4C-ecB" secondAttribute="leading" id="fcv-se-wSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pew-Me-vkh" secondAttribute="trailing" id="ieH-60-1oj"/>
+                                    <constraint firstItem="RuE-It-jSy" firstAttribute="leading" secondItem="Z4N-4C-ecB" secondAttribute="leading" id="jHf-at-oVS"/>
+                                    <constraint firstItem="RuE-It-jSy" firstAttribute="top" secondItem="Z4N-4C-ecB" secondAttribute="top" id="snK-eI-kpB"/>
+                                    <constraint firstItem="Sgw-rg-2lv" firstAttribute="centerX" secondItem="Z4N-4C-ecB" secondAttribute="centerX" id="vDQ-Sv-bVs"/>
+                                    <constraint firstItem="PVV-A1-KOJ" firstAttribute="trailing" secondItem="Sgw-rg-2lv" secondAttribute="trailing" constant="5" id="wvm-rX-Vqt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z4N-4C-ecB" firstAttribute="leading" secondItem="0nG-qo-0iA" secondAttribute="leading" id="0sH-jk-Jo2"/>
+                            <constraint firstItem="Z4N-4C-ecB" firstAttribute="top" secondItem="0nG-qo-0iA" secondAttribute="top" id="7LD-sa-2w1"/>
+                            <constraint firstAttribute="trailing" secondItem="Z4N-4C-ecB" secondAttribute="trailing" id="QNl-wh-ZP8"/>
+                            <constraint firstAttribute="bottom" secondItem="Z4N-4C-ecB" secondAttribute="bottom" id="mPN-eP-zan"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-Zo-gOy">
+                        <rect key="frame" x="0.0" y="150" width="130" height="70"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="addMyStory:" destination="gTV-IL-0wX" eventType="touchUpInside" id="frS-Fo-aDh"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="PDa-Zo-gOy" firstAttribute="trailing" secondItem="Pew-Me-vkh" secondAttribute="trailing" id="2Gn-xo-Lrk"/>
+                <constraint firstAttribute="bottom" secondItem="0nG-qo-0iA" secondAttribute="bottom" id="Jg3-cx-4Q1"/>
+                <constraint firstItem="PDa-Zo-gOy" firstAttribute="top" secondItem="Pew-Me-vkh" secondAttribute="top" id="Jse-Zk-hgz"/>
+                <constraint firstItem="0nG-qo-0iA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="R12-0S-MFt"/>
+                <constraint firstItem="PDa-Zo-gOy" firstAttribute="bottom" secondItem="Pew-Me-vkh" secondAttribute="bottom" id="Uhf-pY-VIy"/>
+                <constraint firstItem="PDa-Zo-gOy" firstAttribute="leading" secondItem="Pew-Me-vkh" secondAttribute="leading" id="WwD-2V-Lhi"/>
+                <constraint firstAttribute="trailing" secondItem="0nG-qo-0iA" secondAttribute="trailing" id="XQd-O4-hif"/>
+                <constraint firstItem="0nG-qo-0iA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p6r-yY-2Kb"/>
+            </constraints>
+            <size key="customSize" width="163" height="250"/>
+            <connections>
+                <outlet property="addStoryBtn" destination="PDa-Zo-gOy" id="c3U-qE-bqh"/>
+                <outlet property="bottomVu" destination="e86-4U-bOL" id="jSZ-ht-Ap7"/>
+                <outlet property="bottomVuForTap" destination="Pew-Me-vkh" id="LmQ-LY-gX3"/>
+                <outlet property="imgVu" destination="Sgw-rg-2lv" id="Xqp-z2-Nnx"/>
+                <outlet property="nameLbl" destination="AWa-rx-jID" id="e4I-ca-lxj"/>
+                <outlet property="plusImg" destination="PVV-A1-KOJ" id="Zaa-6M-cmf"/>
+                <outlet property="storyImgVu" destination="RuE-It-jSy" id="GoB-fM-MkA"/>
+            </connections>
+            <point key="canvasLocation" x="-204.58015267175571" y="-123.94366197183099"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="0" width="500" height="751"/>
+        <image name="gradientImg" width="890.5" height="1187.5"/>
+        <image name="ic_Add" width="32" height="32"/>
+        <namedColor name="backgroundColor">
+            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
